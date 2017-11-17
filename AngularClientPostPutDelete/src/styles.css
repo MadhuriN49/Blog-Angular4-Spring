@@ -1,0 +1,142 @@
+/* You can add global styles to this file, and also import other style files */
+/* Navbar */
+.nav .navbar-nav {
+    font-size: 15px;
+  }
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+  #searchForm {
+    margin-right: 100px;
+  }
+  @media (max-width: 1200px) {
+    #searchForm {
+      display: none;
+    }
+  }
+  h3{
+    text-align: center;
+  }
+  .search{
+    position: relative;
+  
+  }
+  .search .fa-search{
+    position: absolute;
+    top: 10px;
+    right: 6px;
+  }
+  .add-search {
+    margin-bottom: 15px;
+  }
+  .content{
+    width: 250px;
+    height: 420px;
+    margin: 15px auto ;
+    background:  linen;
+    position: relative;
+  }
+  .content img{
+    width: 100%
+  }
+  .person-info{
+    padding: 0 15px;
+    padding-bottom: 15px;
+    color: black ;
+  }
+  .login{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background: linear-gradient(#51b1a3, #53d2a5);
+    /* background:  #fcf8e3; */
+    /* background-image: url("assets/images/travel.jpg");  */
+  } 
+  .login-fields{
+    position: relative;
+    margin-top : 20px ;
+    text-align: center;
+    left: 12%;
+  }
+  .login-fields .fa-user , .fa-key{
+    position: absolute;
+    top: 10px ;
+    left : 15px ;
+  }
+  .login-fields input{
+    padding-left: 35px ;
+    width: 75%;
+  }
+  .login-fields .btn{ 
+    margin-top: 10px;
+    width: 30%;
+    margin-right: 20%;
+    background: white;
+    border: #53d2a5;
+    color: #53d2a5;
+  }
+  
+  .login-fields-header{
+    text-align:  center;
+    color: white; 
+  }
+  hr{
+    border-top: 1px solid #fff;
+  }
+  /* .content:hover .delete{
+    
+    display: block;
+  }
+  .content .delete{
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none ;
+  } */
+  
+  .content {
+      position: relative;
+  }
+  
+  .content:hover .delete {
+      display: block;
+  }
+  
+  .delete {
+      padding-top: 7px;	
+      padding-right: 7px;
+      position: absolute;
+      right: 0;
+    top: 0;
+    font-size: 20px;
+      display: none;
+  }
+  
+  .delete button {
+      color: orangered ;
+  }
+  
+  .addToDashboard{
+  font-size: 50px;
+  position: fixed;
+  top: 12%;
+  right: 0;
+  }
+  contentRead{
+    position: relative ;
+  }
+  .contentRead .btn-primary{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background: none;
+    color: darkorange;
+    border: none;
+  }
+/* .carouselLogin { 
+  background-image: url("assets/images/background.jpg");
+} */

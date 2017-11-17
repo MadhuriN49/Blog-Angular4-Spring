@@ -1,0 +1,28 @@
+<!-- <h2 style="color: blue">JSA - Angular Application!</h2> -->
+<!-- <nav>
+
+	<a routerLink="customer" class="btn btn-primary active" role="button" routerLinkActive="active">Customers</a> 
+	<a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+</nav> -->
+
+<nav class="navbar navbar-inverse" *ngIf= "nav.visible">
+		<div class="container-fluid"> 
+		  <div class="navbar-header">
+			  
+					<a class="navbar-brand" routerLink="dashboard"> Dashboard</a>
+			  
+					<a class="navbar-brand" routerLink="addMore" *ngIf="canAdd"> Add Story</a>
+				
+					<a class="navbar-brand" routerLink="customer" >Customers</a> 
+				
+					<!-- <a  class="navbar-brand" routerLink="add" >Add Customer</a> 
+				 -->
+					<a  class="navbar-brand" routerLink="logout" >Log Out</a>   <!--need to change	 -->	 
+					 
+			 <!-- <a class="navbar-brand" routerLink="allEmps"> All Employees</a> -->
+			
+			</div>
+		  </div>
+</nav> 
+
+<router-outlet></router-outlet>

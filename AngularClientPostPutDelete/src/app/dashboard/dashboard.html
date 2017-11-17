@@ -1,0 +1,56 @@
+<div class="container"> 
+   <div class="addToDashboard" *ngIf="canAdd"> 
+      <a href="addMore">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+      </a> 
+   </div>
+    
+    <!-- <div class="col-md-3" style="float:right;">
+        <div class="search">
+           <input class="form-control"  type="text" [(ngModel)] = "search"> 
+           <i class="fa fa-search" aria-hidden="true"></i> 
+        </div>
+    </div>  -->
+    <div *ngIf="!loggedInStatus">
+      <div *ngFor ="let dashboardContent of dashboardContents ; let i = index; trackBy: trackByFn">
+          <div class="col-md-4">
+              <div class="content">
+              <span class="contentRead"> <a href="readStory"> <img src= {{dashboardContent.imgPath}} alt="image"> </a>
+               <button class="btn btn-primary" (click) = "readContent(dashboardContent)"> Read</button> </span>
+                <div class="delete"><button (click) = "deleteAuthor(dashboardContent)"><i class="fa fa-trash-o" aria-hidden="true"></i></button></div>
+                <div class="person-info"> 
+                    <h4> {{dashboardContent.title}}  </h4> 
+                      <!-- <p>  {{dashboardContent.content}}</p> -->
+                      <h5>{{dashboardContent.authorName}} </h5>
+                      <h5> Date : {{dashboardContent.datePosted}}</h5> 
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Trigger the modal with a button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
