@@ -26,3 +26,25 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## My notes
+
+To install all packages --> "npm install"
+
+To start app --> "npm start"
+
+To install typings globally --> " npm install typings --global " ( required to compile typsescript to javascript code )
+
+Angular cli --> " npm install -g @angular/cli "   ( The Angular CLI is a tool to initialize, develop, scaffold and maintain Angular applications )
+
+Making angular fetch data from Spring -- 1. under main folder create file called                                                            "proxy.config.json"
+                                      -- 2.  Inside "proxy.config.json" write --
+{
+    "/api": {
+        "target": "http://localhost:8080",
+        "secure": false
+    }
+}                                     
+
+
